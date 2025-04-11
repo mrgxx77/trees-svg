@@ -1,0 +1,55 @@
+.cloud{
+    transform: translateX(100px); 
+    animation: сloud 15s infinite;
+}
+.cloud > .dot{
+    transform: translateX(100px); 
+    animation: dot 15s infinite;
+}
+
+@keyframes сloud {
+    0% { 
+        transform: translateX(100px); 
+    }
+    20% { 
+        transform: translateX(0px); 
+    }
+    80% { 
+        transform: translateX(0px); 
+    }
+    100% { 
+        transform: translateX(100px); 
+    }
+}
+@keyframes dot {
+    0% { 
+        transform: translateY(0px); 
+    }
+    20% { 
+        transform: translateY(0px); 
+    }
+    30% { 
+        transform: translateY(10px); 
+    }
+    40% { 
+        transform: translateY(20px); 
+    }
+    50% { 
+        transform: translateY(30px); 
+    }
+    60% { 
+        transform: translateY(40px); 
+    }
+    70% { 
+        transform: translateY(50px); 
+    }
+    80% { 
+        transform: translateY(60px); 
+    }
+    90% { 
+        transform: translateY(70px); 
+    }
+    100% { 
+        transform: translateY(80px); 
+    }
+}
