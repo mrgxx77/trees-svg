@@ -1,12 +1,46 @@
+.rain svg{
+    animation: svg 15s infinite;
+}
 .cloud{
     transform: translateX(100px); 
     animation: сloud 15s infinite;
+}
+.cloud-two{
+    transform: translateY(0px); 
+    transform: translateX(100px); 
+    animation: сloud-two 15s infinite;
 }
 .cloud > .dot{
     transform: translateX(100px); 
     animation: dot 15s infinite;
 }
+.cloud > .two{
+    transform: translateX(100px); 
+    animation: two 15s infinite;
+}
+.cloud > .three{
+    transform: translateX(100px); 
+    animation: three 15s infinite;
+}
+.cloud > .four{
+    transform: translateX(100px); 
+    animation: four 15s infinite;
+}
 
+@keyframes svg {
+    0% { 
+        background-color: #fff;
+    }
+    20% { 
+    background-color: rgb(173, 173, 173);
+    }
+    80% { 
+    background-color: rgb(173, 173, 173);
+    }
+    100% { 
+        background-color: #fff;
+    }
+}
 @keyframes сloud {
     0% { 
         transform: translateX(100px); 
@@ -21,11 +55,26 @@
         transform: translateX(100px); 
     }
 }
-@keyframes dot {
+@keyframes сloud-two {
     0% { 
-        transform: translateY(0px); 
+    transform: translateY(20px); 
+    transform: translateX(0px); 
     }
     20% { 
+    transform: translateY(20px); 
+    transform: translateX(40px); 
+    }
+    80% { 
+    transform: translateY(20px); 
+    transform: translateX(40px); 
+    }
+    100% { 
+    transform: translateY(20px); 
+    transform: translateX(0px); 
+    }
+}
+@keyframes dot {
+    0% { 
         transform: translateY(0px); 
     }
     30% { 
@@ -51,5 +100,76 @@
     }
     100% { 
         transform: translateY(80px); 
+    }
+}
+@keyframes two {
+    0% { 
+        transform: translateY(0px); 
+    }
+    40% { 
+        transform: translateY(10px); 
+    }
+    50% { 
+        transform: translateY(20px); 
+    }
+    60% { 
+        transform: translateY(30px); 
+    }
+    70% { 
+        transform: translateY(40px); 
+    }
+    80% { 
+        transform: translateY(50px); 
+    }
+    90% { 
+        transform: translateY(60px); 
+    }
+    100% { 
+        transform: translateY(70px); 
+    }
+}
+
+@keyframes three {
+    0% { 
+        transform: translateY(0px); 
+    }
+    50% { 
+        transform: translateY(10px); 
+    }
+    60% { 
+        transform: translateY(20px); 
+    }
+    70% { 
+        transform: translateY(30px); 
+    }
+    80% { 
+        transform: translateY(40px); 
+    }
+    90% { 
+        transform: translateY(50px); 
+    }
+    100% { 
+        transform: translateY(60px); 
+    }
+}
+
+@keyframes four {
+    0% { 
+        transform: translateY(0px); 
+    }
+    60% { 
+        transform: translateY(10px); 
+    }
+    70% { 
+        transform: translateY(20px); 
+    }
+    80% { 
+        transform: translateY(30px); 
+    }
+    90% { 
+        transform: translateY(40px); 
+    }
+    100% { 
+        transform: translateY(50px); 
     }
 }
